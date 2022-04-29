@@ -119,6 +119,7 @@ main {
     border: none;
     outline: none;
     resize: none;
+    background-color: #ffffff;
 }
 
 footer {
