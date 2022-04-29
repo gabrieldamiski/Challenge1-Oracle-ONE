@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto | Challenge Oracle ONE | Alura</title>
+    <link rel="shortcut icon" type="imagex/png" href="./img/alura-logo-min.svg">
+    <link rel="stylesheet" href="style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <div id="logo-alura">
+            <a href="https://www.alura.com.br/" target="_blank">
+                <img class="logo" src="./img/alura-logo.svg" alt="Logo da alura">
+                <img class="logo-min" src="./img/alura-logo-min.svg" alt="Logo da alura">
+            </a>
+        </div>
+        <div class="primeira-col">
+            <textarea name="text" id="text" placeholder="Digite seu texto"></textarea>
+            <div>
+                <div class="aviso">
+                    <img src="./img/exclamation.svg">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="primeira-col-btn">
+                    <button class="btn btn-blue" onclick="criptografarTexto()">Criptografar</button>
+                    <button class="btn" onclick="descriptografarTexto()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="segunda-col">
+            <div class="segunda-col-empty" >
+                <img src="./img/high-quality-products.svg"">
+                <div class="segunda-col-empty-desc">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div class="segunda-col-text" style="display: none;">
+                <textarea name="text-cripto" id="text-cripto"></textarea>
+                <button class="btn btn-copiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><span>Gabriel Damiski</span> © 2022</p>
+        <div>
+            <a href="https://github.com/damisk1" target="_blank"><img src="./img/github-brands.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/gabriel-damiski/" target="_blank"><img src="./img/linkedin-in-brands.svg" alt=""></a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

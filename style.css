@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F3F5FC;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    height: calc(96vh - 80px);
+}
+.btn {
+    padding: 1.5rem;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    background-color: transparent;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn:active {
+    background-color: #dee8f1;
+}
+
+.btn-blue {
+    color: #ffffff;
+    background-color: #0A3871;
+    transition: background .3s ease;
+}
+.btn-blue:hover {
+    background-color: #072B61;
+}
+#logo-alura .logo-min {
+    display: none
+}
+
+/*Primeira Coluna*/
+.primeira-col {
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.primeira-col #text {
+    width: 100%;
+    height: 60%;
+    background-color: #F3F5FC;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 128px 1rem;
+    color: #0A3871;
+    font-size: 2rem;
+}
+.aviso {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+.primeira-col p {
+    font-size: 0.75rem;
+    color: #495057;
+    padding-bottom: 16px;
+}
+.primeira-col-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 2rem;
+}
+
+/*Segunda Coluna*/
+.segunda-col {
+    width: calc(400px + 32px*2);
+    box-shadow: 0px 24px 32px -8px hsla(0, 0%, 0%, 0.08);
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+#text::-webkit-input-placeholder{ color: #0A3871;}
+#text input:-moz-placeholder { color:#0A3871; }
+#text:-moz-placeholder { color:#0A3871;}
+.segunda-col-empty {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.segunda-col-empty img{
+    margin-bottom: 2rem; 
+}
+.segunda-col-empty-desc h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #343A40;
+}
+.segunda-col-empty-desc p {
+    font-size: 1rem;
+    color: #495057;
+}
+.segunda-col-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.segunda-col-text textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #495057;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    gap: 1rem;
+    color: #495057;
+}
+
+footer div {
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+
+footer div::before{
+    content: '|';
+}
+
+footer span {
+    color: #072B61;
+    font-weight: bold;
+}
+
+footer img {
+    width: 1.5rem;
+}
+@media (max-width: 1320px) {
+    .segunda-col {
+        width: initial;
+        height: 96%;
+    }
+    .primeira-col-btn {
+        gap: 1rem;
+    }
+    .segunda-col-text {
+        width: 336px;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        padding-left: 0;
+    }
+    main {
+        grid-template-columns: auto 4fr 2fr;
+    }
+    .primeira-col {
+        margin-right: 1.5rem;
+    }
+}
+@media (max-width: 900px) {
+    body {
+        padding-left: 40px;
+        padding-bottom: 1rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .primeira-col #text {
+        padding: 128px 0 2rem 0;
+    }
+    .segunda-col-empty img {
+        display: none;
+    }
+    #logo-alura .logo {
+        display: none;
+    }
+    #logo-alura .logo-min {
+        display: block;
+    }
+    .primeira-col {
+        margin-right: 0;
+    }
+    .segunda-col {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .primeira-col #text {
+        height: 400px;
+    }
+    .primeira-col-btn {
+        gap: .5rem;
+        padding-bottom: 2rem;
+    }
+    .segunda-col-text {
+        width: 100%;
+    }
+    .segunda-col-text textarea {
+        height: 200px;
+    }
+    .segunda-col {
+        height: auto;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        padding: 1.5rem 1rem;
+    }
+    .primeira-col-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .primeira-col #text {
+        padding: 80px 0 2rem 0;
+    }
+    .segunda-col {
+        height: auto;
+    }
+    .segunda-col-text textarea {
+        font-size: 1.3rem;
+    }
+    footer {
+        font-size: .8rem;
+    }
+}
