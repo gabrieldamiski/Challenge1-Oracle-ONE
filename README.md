@@ -17,3 +17,6 @@ As "chaves" de criptografia que utilizaremos são:
 Por exemplo:
 `"gato" => "gaitober"`
 `gaitober" => "gato"`
+
+![challenge1-oracleOne](https://user-images.githubusercontent.com/78889170/166059606-836defd7-0aa4-486e-ac0d-8bf3a9218978.png)
+![challenge1-oracleOne(2)](https://user-images.githubusercontent.com/78889170/166060108-81785535-f1ba-4b8a-a1dd-30a941340464.png)
